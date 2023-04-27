@@ -20,7 +20,7 @@ const Navbar = () => {
             <KeyboardArrowDownIcon />
           </div>
           <div className="item">
-            <Link>Women</Link>
+            <Link to="/products/1">Women</Link>
           </div>
         </div>
         <div className="center"></div>
