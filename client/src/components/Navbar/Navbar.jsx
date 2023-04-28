@@ -5,6 +5,7 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
+import "./Navbar.scss";
 
 const Navbar = () => {
   return (
@@ -20,30 +21,46 @@ const Navbar = () => {
             <KeyboardArrowDownIcon />
           </div>
           <div className="item">
-            <Link to="/products/1">Feminino</Link>
+            <Link className="link" to="/products/1">
+              Feminino
+            </Link>
           </div>
           <div className="item">
-            <Link to="/products/2">Masculino</Link>
+            <Link className="link" to="/products/2">
+              Masculino
+            </Link>
           </div>
           <div className="item">
-            <Link to="/products/3">Infantil</Link>
+            <Link className="link" to="/products/3">
+              Infantil
+            </Link>
           </div>
         </div>
         <div className="center">
-          <Link to="/">YayArtStore</Link>
+          <Link className="link" to="/">
+            YAYARTSTORE
+          </Link>
         </div>
         <div className="right">
-          <div className="center">
-            <Link to="/">Início</Link>
+          <div className="item">
+            <Link className="link" to="/">
+              Início
+            </Link>
           </div>
-          <div className="center">
-            <Link to="/">Sobre</Link>
+          <div className="item">
+            <Link className="link" to="/">
+              Sobre
+            </Link>
           </div>
-          <div className="center">
-            <Link to="/">Contato</Link>
+          <div className="item">
+            <Link className="link" to="/">
+              Contato
+            </Link>
           </div>
-          <div className="center">
-            <Link to="/">Lojas</Link>
+          <div className="item">
+            <Link className="link" to="/">
+              Lojas
+            </Link>
           </div>
           <div className="icons">
             <SearchIcon />
