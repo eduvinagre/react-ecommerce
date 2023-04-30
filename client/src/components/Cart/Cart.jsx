@@ -61,7 +61,7 @@ const Cart = () => {
         <span>SUBTOTAL</span>
         <span>R$ 123.45</span>
       </div>
-      <button>PROSSEGUIR COM CHECKOUT</button>
+      <button>PROSSEGUIR PARA CHECKOUT</button>
       <span className="reset">Limpar Carrinho</span>
     </div>
   );
