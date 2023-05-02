@@ -9,23 +9,23 @@ const FeaturedProducts = ({ type }) => {
   );
 
   return (
-    <div>
-      <div className="featuredProducts">
-        <div className="top">
-          <h1>{type} em destaque</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            blandit hendrerit tellus, ut dictum libero sodales et. Sed tortor
-            orci, blandit non arcu vel, pulvinar tincidunt turpis. Pellentesque
-            in faucibus enim, non viverra metus. Praesent augue dolor, sagittis
-            vitae orci eget, faucibus placerat nunc. Mauris gravida.
-          </p>
-        </div>
-        <div className="bottom">
-          {loading
-            ? "loading"
-            : data.map((item) => <Card item={item} key={item.id} />)}
-        </div>
+    <div className="featuredProducts">
+      <div className="top">
+        <h1>{type} products</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+          suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+          lacus vel facilisis labore et dolore magna aliqua. Quis ipsum
+          suspendisse ultrices gravida. Risus commodo viverra maecenas.
+        </p>
+      </div>
+      <div className="bottom">
+        {error
+          ? "Something went wrong!"
+          : loading
+          ? "loading"
+          : data?.map((item) => <Card item={item} key={item.id} />)}
       </div>
     </div>
   );
