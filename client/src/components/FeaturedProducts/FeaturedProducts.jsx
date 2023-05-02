@@ -43,7 +43,7 @@ const FeaturedProducts = ({ type }) => {
     <div>
       <div className="featuredProducts">
         <div className="top">
-          <h1>{type} destaque</h1>
+          <h1>{type} em destaque</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
             blandit hendrerit tellus, ut dictum libero sodales et. Sed tortor
