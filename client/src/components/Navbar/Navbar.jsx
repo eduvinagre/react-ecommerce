@@ -25,12 +25,12 @@ const Navbar = () => {
           </div>
           <div className="item">
             <Link className="link" to="/products/1">
-              Feminino
+              Masculino
             </Link>
           </div>
           <div className="item">
             <Link className="link" to="/products/2">
-              Masculino
+              Feminino
             </Link>
           </div>
           <div className="item">
