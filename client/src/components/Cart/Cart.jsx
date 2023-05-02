@@ -1,52 +1,19 @@
 import React from "react";
 import "./Cart.scss";
 import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
+import { useSelector } from "react-redux";
+import { removeItem, resetCart } from "../../redux/cartReducer";
+import { useDispatch } from "react-redux";
+import { makeRequest } from "../../makeRequest";
+import { loadStripe } from "@stripe/stripe-js";
 
 const Cart = () => {
-  const data = [
-    {
-      id: 1,
-      img: "https://images.pexels.com/photos/1972115/pexels-photo-1972115.jpeg?auto-compress&cs=tinysrgb&w=1600",
-      img2: "https://images.pexels.com/photos/1163194/pexels-photo-1163194.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      title: "T-shirt gráfica de manga comprida",
-      desc: "Blusa de manga comprida",
-      isNew: true,
-      oldPrice: 99.99,
-      price: 49.99,
-    },
-    {
-      id: 2,
-      img: "https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      title: "Casaco",
-      desc: "Casco em material sintético",
-      isNew: true,
-      oldPrice: 129.99,
-      price: 89.99,
-    },
-    {
-      id: 3,
-      img: "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      title: "Saia",
-      desc: "Saia colorida",
-      isNew: false,
-      oldPrice: 149.99,
-      price: 99.99,
-    },
-    {
-      id: 4,
-      img: "https://images.pexels.com/photos/2065200/pexels-photo-2065200.jpeg?auto=compress&cs=tinysrob&w=1600",
-      title: "Chapéu",
-      desc: "Chapéu sertanejo",
-      isNew: false,
-      oldPrice: 79.99,
-      price: 29.99,
-    },
-  ];
+  const products = useSelector((state) => state.cart.products);
 
   return (
     <div className="cart">
       <h1>Produtos no carrinho</h1>
-      {data?.map((item) => (
+      {products?.map((item) => (
         <div className="item" key={item.id}>
           <img src={item.img} alt="" />
           <div className="details">
