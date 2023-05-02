@@ -13,8 +13,8 @@ const Card = ({ item }) => {
         </div>
         <h2>{item?.attributes.title}</h2>
         <div className="prices">
-          <h3>R$ {item.oldPrice}</h3>
-          <h3>R$ {item.price}</h3>
+          <h3>R$ {item.oldPrice || item?.attributes.price + 50}</h3>
+          <h3>R$ {item?.attributes.price}</h3>
         </div>
       </div>
     </Link>
