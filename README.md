@@ -21,10 +21,6 @@ This is a functional website I made using React for an imaginary Department Stor
 
 Continuinig my development this is a project I made using React, SASS, Vanilla, Redux, Strapi and Stripe. I was a nice approach to a fullstack work and I'm quite proud of it. To run this project with all it's capabilities you'll need to clone de repository and install Redux, Strapi and Stripe. Especially if you want to use the simulation of the credit card payment on checkout. Run the Strapi API and the React Server.
 
-### Deploy
-
-https://real-sate-react.vercel.app (NOTE: ONLY the REACT
-
 ### The challenge
 
 The main challenge was to build a small but functional fullstack project, using api, database and putting into practice my skills on React and SASS. CRUD and DOM manipulation are also largely used on this project. Integration the front-end with the back-end was really fun and nice to study.
